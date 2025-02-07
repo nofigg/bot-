@@ -17,11 +17,15 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files
-.env*
+.env.local
+.env.production
+.env.development
+!.env.example  # Allow Windsurf to see structure, but not real secrets
 
-# vercel
+# vercel (Keep config if needed)
 .vercel
+!vercel.json  # Ensure Windsurf can access Vercel config
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+!next-env.d.ts  # Keep if debugging TS
