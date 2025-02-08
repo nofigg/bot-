@@ -1,4 +1,4 @@
-# Digital Business Bot Platform
+# Jarvice
 
 ## Overview
 This project is a full-stack application that allows users to configure a chatbot and generate QR codes for easy access. It consists of a frontend built with React and a backend powered by Express and MongoDB.
@@ -12,7 +12,7 @@ This project is a full-stack application that allows users to configure a chatbo
 ### Clone the repository
 ```bash
 git clone <repository-url>
-cd bot-
+cd Jarvice
 ```
 
 ### Install dependencies
