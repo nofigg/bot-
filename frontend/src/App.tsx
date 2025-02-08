@@ -8,6 +8,9 @@ import Dashboard from "./pages/Dashboard"
 import QRPage from "./pages/QRPage"
 
 const App: React.FC = () => {
+  console.log('Front End is running!');
+  console.log('Front End is running!');
+  console.log('Front End is running!');
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
@@ -25,4 +28,3 @@ const App: React.FC = () => {
 }
 
 export default App
-

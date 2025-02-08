@@ -16,7 +16,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# env files (keep secrets safe)
 .env.local
 .env.production
 .env.development
@@ -29,3 +29,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 !next-env.d.ts  # Keep if debugging TS
+
+# Allow access to project directories and configs
+!frontend/
+!backend/
+!package.json
+!server.js
+!app.tsx
