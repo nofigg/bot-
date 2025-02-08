@@ -18,7 +18,8 @@ yarn-error.log*
 
 # env files (keep secrets safe)
 .env
-.env
+
+
 .env.local
 .env.production
 .env.development
