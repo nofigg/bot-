@@ -13,7 +13,7 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:5000/auth/register", { email, password })
+      await axios.post("http://localhost:4000/auth/register", { email, password })
       alert("Registration successful! Please log in.")
       navigate("/login")
     } catch (error) {

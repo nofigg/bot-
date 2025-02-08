@@ -6,6 +6,7 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import Button from "../components/Button"
 import Spinner from "../components/Spinner"
+import { API_ENDPOINTS } from "../config/api"
 
 const Register: React.FC = () => {
   const [email, setEmail] = useState("")
@@ -19,7 +20,7 @@ const Register: React.FC = () => {
     setIsLoading(true)
     setError("")
     try {
-      await axios.post("http://localhost:5000/auth/register", { email, password })
+      await axios.post("http://localhost:4000/auth/register", { email, password })
       navigate("/login")
     } catch (error) {
       console.error("Registration error:", error)
